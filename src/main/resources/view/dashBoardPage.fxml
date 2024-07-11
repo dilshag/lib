@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #006266;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.DashBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfafa" height="652.0" layoutX="30.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="1321.0" />
+      <ImageView fitHeight="616.0" fitWidth="1004.0" layoutX="326.0" layoutY="42.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/halloween-background-with-pumpkins_221128-40242.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="71.41" radius="25.5675" spread="0.45" width="32.86" />
+         </effect>
+      </ImageView>
+      <JFXButton layoutX="63.0" layoutY="269.0" onAction="#btnMemberOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="Member">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="313.0" onAction="#btnBookrackOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="     Book Rack">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="357.0" onAction="#btnBookOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="Books">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="401.0" onAction="#btnAuthorsOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="        Book Authors">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="445.0" onAction="#btnReservationOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="     Reservation">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="489.0" onAction="#btnSupplierOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="       Book Supplier">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="577.0" onAction="#btnLogoutOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #2d3436; -fx-background-radius: 4; -fx-border-radius: 4;" text="      LOGOUT" textFill="#fffcfc">
+         <font>
+            <Font name="Gidugu" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="lblAuthorCount1" layoutX="67.0" layoutY="34.0" prefHeight="63.0" prefWidth="215.0" text="  DASHBOARD" textFill="#006266" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Noto Serif CJK KR" size="28.0" />
+         </font>
+         <effect>
+            <BoxBlur height="147.68" iterations="0" width="83.93" />
+         </effect>
+      </Label>
+      <JFXButton layoutX="63.0" layoutY="225.0" onAction="#btnMembershipFeeOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-border-radius: 4; -fx-background-radius: 4;" text="            Membership Fee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="32.86" radius="15.19" spread="1.0" width="29.9" />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="81.0" layoutY="232.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-14-fees-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="76.0" layoutY="365.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-books-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="81.0" layoutY="450.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-reserve-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="80.0" layoutY="490.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-supplier-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="79.0" layoutY="268.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-people-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="78.0" layoutY="404.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-writer-female-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="79.0" layoutY="314.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-bookshelf-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="26.0" layoutX="74.0" layoutY="581.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-logout-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="63.0" layoutY="533.0" onAction="#btnEmailOnAction" prefHeight="43.0" prefWidth="223.0" style="-fx-background-color: #006266; -fx-background-radius: 4; -fx-border-radius: 4;" text="Send Email">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="160.12" radius="93.6425" spread="0.48" width="216.45" />
+         </effect>
+      </JFXButton>
+      <AnchorPane fx:id="ChildRoot" layoutX="319.0" layoutY="30.0" prefHeight="643.0" prefWidth="1018.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="433.0" layoutY="111.0" opacity="0.83" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/L6ae.gif" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="230.0" layoutY="111.0" opacity="0.87" prefHeight="149.0" prefWidth="204.0" style="-fx-background-color: #2d3436; -fx-background-radius: 10;">
+               <children>
+                  <AnchorPane layoutY="-3.0" prefHeight="49.0" prefWidth="204.0" style="-fx-background-color: #006266; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="43.0" layoutY="12.0" prefHeight="25.0" prefWidth="119.0" text="Member Count">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="lblMemberCount" layoutX="117.0" layoutY="74.0" prefHeight="43.0" prefWidth="72.0" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="71.0" fitWidth="79.0" layoutX="23.0" layoutY="67.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/giphy%20(4).gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="607.0" layoutY="111.0" opacity="0.87" prefHeight="150.0" prefWidth="204.0" style="-fx-background-color: #2d3436; -fx-background-radius: 10;">
+               <children>
+                  <AnchorPane prefHeight="49.0" prefWidth="204.0" style="-fx-background-color: #006266; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="28.0" layoutY="12.0" prefHeight="25.0" prefWidth="148.0" text="Book Borrow Count">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="lblBorrowCount" layoutX="118.0" layoutY="75.0" prefHeight="43.0" prefWidth="72.0" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="71.0" fitWidth="79.0" layoutX="11.0" layoutY="64.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/giphy%20(3).gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="230.0" layoutY="48.0" opacity="0.9" prefHeight="63.0" prefWidth="580.0" style="-fx-background-color: #006266;" text="               WELCOME TO LIBRARY" textFill="#ebe1e1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="lblDate" layoutX="37.0" layoutY="656.0" prefHeight="16.0" prefWidth="88.0" text="Date">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="237.0" layoutY="656.0" prefHeight="16.0" prefWidth="104.0" text="Time">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="96.0" layoutY="86.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/giphy%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="78.0" layoutY="537.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/icons8-category-emails-bundle-32.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

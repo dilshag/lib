@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #006266;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.SignupPageController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/beautiful-landscape-from-magazine-coming-life_23-2151158557%20(1).jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfafa" height="435.0" layoutX="498.0" layoutY="70.0" opacity="0.46" stroke="#fcfafa" strokeType="INSIDE" width="311.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtFirstname" layoutX="523.0" layoutY="179.0" onKeyReleased="#txtFirstnameOnKeyReleased" opacity="0.87" prefHeight="22.0" prefWidth="261.0" promptText="First Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLastname" layoutX="523.0" layoutY="211.0" onKeyReleased="#txtLastnameOnKeyReleased" opacity="0.87" prefHeight="24.0" prefWidth="261.0" promptText="Last name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNIC" layoutX="523.0" layoutY="243.0" onKeyReleased="#txtNICOnKeyReleased" opacity="0.87" prefHeight="24.0" prefWidth="261.0" promptText="NIC Number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmailAddress" layoutX="523.0" layoutY="275.0" onKeyReleased="#txtEmailAddressOnKeyReleased" opacity="0.87" prefHeight="22.0" prefWidth="261.0" promptText="Email Address">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="523.0" layoutY="376.0" onKeyReleased="#txtPasswordOnKeyReleased" opacity="0.87" prefHeight="24.0" prefWidth="261.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserName" layoutX="523.0" layoutY="342.0" onKeyReleased="#txtUserNameOnKeyReleased" opacity="0.87" prefHeight="21.0" prefWidth="261.0" promptText="User Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="567.0" layoutY="418.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#btnCreateAccountOnAction" prefHeight="35.0" prefWidth="160.0" style="-fx-background-color: #2d3436; -fx-background-radius: 10; -fx-border-radius: 10;" text="CREATE ACCOUNT" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="523.0" layoutY="470.0" prefHeight="21.0" prefWidth="189.0" text="Already have an account?" textFill="#042c39">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPhoneNumber" layoutX="523.0" layoutY="308.0" onKeyReleased="#txtPhoneNumberOnKeyReleased" opacity="0.87" prefHeight="22.0" prefWidth="261.0" promptText="Phone Number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtType" layoutX="523.0" layoutY="147.0" onKeyReleased="#txtTypeOnKeyReleased" opacity="0.87" prefHeight="24.0" prefWidth="261.0" promptText="Type">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Hyperlink layoutX="712.0" layoutY="469.0" onAction="#hyperLoginHereOnAction" prefHeight="22.0" prefWidth="91.0" text="Login here" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Text layoutX="605.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP" wrappingWidth="101.23876953125">
+         <font>
+            <Font name="FreeSerif" size="18.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

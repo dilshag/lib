@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #006266;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.LoginController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/beautiful-landscape-from-magazine-coming-life_23-2151158557%20(1).jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfafa" height="435.0" layoutX="511.0" layoutY="53.0" opacity="0.42" stroke="#fcfafa" strokeType="INSIDE" width="306.0">
+         <effect>
+            <DropShadow />
+         </effect></Rectangle>
+      <Text layoutX="532.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Welcome, Please login in to your account" wrappingWidth="255.99999999999994">
+         <font>
+            <Font name="FreeSerif Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="551.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName :" wrappingWidth="138.8671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="554.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" wrappingWidth="130.078125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="550.0" layoutY="259.0" prefHeight="24.0" prefWidth="215.0" />
+      <TextField fx:id="txtPassword" accessibleRole="PASSWORD_FIELD" layoutX="550.0" layoutY="313.0" prefHeight="24.0" prefWidth="215.0" />
+      <JFXButton fx:id="btnLogin" layoutX="600.0" layoutY="365.0" onAction="#btnLoginOnAction" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #2d3436;" text="Login" textFill="#e5f2f5" />
+      <Text layoutX="645.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" wrappingWidth="30.26513671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="132.0" fitWidth="165.0" layoutX="571.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/c3e9120ceb47bbaf2070a41a6ff2d391.gif" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="631.0" layoutY="424.0" onAction="#hyperSignUpOnAction" style="-fx-background-color: #488E91;" text="Sign up" textFill="#141414" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
